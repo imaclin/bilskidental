@@ -48,6 +48,11 @@ export default function BridgesPartialsPage() {
       {/* Bridge section */}
       <section className="py-24 bg-white">
         <Container>
+          <div className="max-w-3xl mb-14">
+            <p className="font-body text-[var(--color-muted)] leading-relaxed">
+              Dental bridges and partial dentures provide reliable solutions for adults facing the challenges of missing teeth. Unaddressed, gaps left by missing teeth can lead to adjacent teeth shifting, negatively affecting your mouth's aesthetics and function. This shifting can potentially lead to bite misalignment and difficulty with chewing or speaking. Dental bridges and partial dentures fill these gaps, preventing the neighboring teeth from moving and maintaining the natural alignment of your jaw and bite.
+            </p>
+          </div>
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Dental Bridges</p>
@@ -98,9 +103,7 @@ export default function BridgesPartialsPage() {
               <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Removable Partial Dentures</p>
               <h2 className="font-heading text-[var(--color-navy)] mb-6">A versatile, cost-effective solution</h2>
               <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed mb-6">
-                When some natural teeth remain, partial dentures fill the gaps
-                with a custom-designed appliance that clasps onto existing teeth
-                and blends naturally with your smile.
+                Removable Partial Dentures are a versatile and cost-effective solution for those looking to restore their smile and functionality after tooth loss. Whether you're missing a few teeth due to injury, decay, or age, our custom-designed partial dentures offer a comfortable and aesthetic option.
               </p>
               <div className="p-5 bg-white rounded-2xl border border-[var(--color-beige)]">
                 <p className="font-secondary font-600 text-sm text-[var(--color-navy)] mb-1">Expected Lifespan</p>
@@ -123,10 +126,18 @@ export default function BridgesPartialsPage() {
               </div>
             </div>
           </div>
-          <div className="mt-12 text-center">
-            <Button variant="primary" size="lg" shadow={true} asChild>
-              <Link href="/contact">Schedule a Free Consultation <ChevronRight size={14} /></Link>
-            </Button>
+          <div className="mt-12">
+            <div className="bg-white rounded-2xl p-6 border border-[var(--color-beige)] mb-8">
+              <p className="font-secondary font-600 text-sm text-[var(--color-navy)] mb-2">Reliable, Personalized Care</p>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed">
+                By choosing Bilski Dental for your dental bridge or partial denture needs, you're opting for a blend of professional expertise, personalized care, and innovative dental solutions designed to restore not only your smile but also your confidence and oral health.
+              </p>
+            </div>
+            <div className="text-center">
+              <Button variant="primary" size="lg" shadow={true} asChild>
+                <Link href="/contact">Schedule a Free Consultation <ChevronRight size={14} /></Link>
+              </Button>
+            </div>
           </div>
         </Container>
       </section>

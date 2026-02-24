@@ -24,20 +24,20 @@ const types = [
   {
     name: "Same-Day Dental Veneers",
     brand: "Provánce®",
-    desc: "Composite veneers completed in a single visit. Immediately improves tooth shape, size, and color with no waiting period.",
-    highlight: "One Appointment",
+    desc: "Provánce® composite veneers are a groundbreaking solution that offers improvements in tooth shape, size, and color in just a single visit.",
+    highlight: "Same-Day Smile Results",
   },
   {
     name: "Porcelain Dental Veneers",
     brand: "Traditional",
-    desc: "The cornerstone of cosmetic dentistry. Precision-crafted with artistry for remarkable, long-lasting results in 3 steps.",
-    highlight: "Most Durable",
+    desc: "Porcelain veneers are a cornerstone of cosmetic dentistry, designed to perfect the aesthetics of your smile with precision and artistry.",
+    highlight: "Remarkable Results in 3 Steps",
   },
   {
     name: "Snap-On Smile®",
     brand: "Snap-On Smile",
-    desc: "A cost-effective, removable Hollywood smile transformation — no drilling, no injections, no permanency required.",
-    highlight: "Non-Invasive",
+    desc: "Snap-On Smile® offers a cost-effective solution for anyone dreaming of a Hollywood smile without the price tag of traditional cosmetic dentistry.",
+    highlight: "A Personalized Smile Transformation",
   },
 ];
 
@@ -62,13 +62,26 @@ export default function DentalVeneersPage() {
         secondaryButtonHref="/cosmetic-dentistry"
       />
 
+      {/* What are veneers */}
+      <section className="py-16 bg-white">
+        <Container size="md">
+          <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Dental Veneers</p>
+          <p className="font-body text-[var(--color-muted)] leading-relaxed">
+            Dental veneers are a highly effective cosmetic dental solution that can enhance the appearance of your smile. Designed to adhere to the front surface of your teeth, veneers can dramatically improve aesthetic aspects like color, shape, size, and length. They not only enhance the visual appeal but also provide a durable solution that can resist stains better than natural tooth enamel.
+          </p>
+        </Container>
+      </section>
+
       {/* Benefits */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white pt-0">
         <Container>
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Why Veneers</p>
-              <h2 className="font-heading text-[var(--color-navy)] mb-8">The benefits of dental veneers</h2>
+              <h2 className="font-heading text-[var(--color-navy)] mb-3">The benefits of dental veneers</h2>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed mb-8">
+                Veneers are a popular choice for those looking to enhance their smile, offering numerous benefits:
+              </p>
               <div className="space-y-5">
                 {benefits.map((b) => (
                   <div key={b.title} className="flex gap-4">
@@ -86,7 +99,10 @@ export default function DentalVeneersPage() {
 
             {/* Comparison table */}
             <div>
-              <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-5">Veneers vs. Crowns</p>
+              <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Veneers vs. Crowns</p>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed mb-5">
+                We understand that choosing the right dental treatment to enhance your smile is crucial. When deciding between dental veneers and crowns, each serves distinct purposes and offers unique benefits based on your dental needs.
+              </p>
               <div className="rounded-2xl border border-[var(--color-beige)] overflow-hidden">
                 <div className="grid grid-cols-3 bg-[var(--color-navy)] text-white text-xs font-secondary font-600 uppercase tracking-wider">
                   <div className="p-3 border-r border-white/10"></div>
@@ -109,12 +125,26 @@ export default function DentalVeneersPage() {
         </Container>
       </section>
 
+      {/* Enhance Your Smile */}
+      <section className="py-16 bg-[var(--color-navy)]">
+        <Container size="md">
+          <div className="text-center">
+            <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-beige)] mb-3">Enhance Your Smile</p>
+            <p className="font-heading text-white text-3xl mb-4 italic">Quick · Artistic · Cost-Effective</p>
+            <p className="font-body text-white/70 leading-relaxed max-w-2xl mx-auto">
+              Whether you're looking to correct chips, stains, misalignments, or gaps between teeth, veneers provide a durable and aesthetic option with results that can transform your smile and boost your confidence.
+            </p>
+          </div>
+        </Container>
+      </section>
+
       {/* Types */}
       <section className="py-24 bg-[var(--color-beige-light)]">
         <Container>
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">3 Options</p>
-            <h2 className="font-heading text-[var(--color-navy)]">Choose the veneer that's right for you</h2>
+            <h2 className="font-heading text-[var(--color-navy)] mb-3">Choose the veneer that's right for you</h2>
+            <p className="font-body text-sm text-[var(--color-muted)]">Explore our veneer options — Same-Day, Porcelain, and Snap-On — to find the perfect solution for a flawless, radiant smile.</p>
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
             {types.map((t) => (

@@ -43,12 +43,25 @@ export default function LaserGumTherapyPage() {
         secondaryButtonHref="/general-dentistry"
       />
 
+      {/* Description */}
+      <section className="py-16 bg-white">
+        <Container size="md">
+          <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Laser Gum Therapy</p>
+          <p className="font-body text-[var(--color-muted)] leading-relaxed">
+            Laser Gum Therapy, also known as laser periodontal therapy, is a modern dental procedure that utilizes a high-intensity laser — the first of its kind in our region — to target and remove inflamed gum tissue around the tooth's root. This technique effectively eliminates bacteria and promotes the regeneration of healthy gums. The precision of the laser ensures that only diseased tissue is treated, preserving healthy gum areas and accelerating the healing process.
+          </p>
+        </Container>
+      </section>
+
       {/* Advantages */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white pt-8">
         <Container>
           <div className="max-w-2xl mb-14">
             <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Why Choose Laser</p>
-            <h2 className="font-heading text-[var(--color-navy)] mb-4">The advantages of laser gum therapy</h2>
+            <h2 className="font-heading text-[var(--color-navy)] mb-3">The advantages of laser gum therapy</h2>
+            <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed">
+              Opting for Laser Gum Therapy at Bilski Dental provides several key benefits:
+            </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {advantages.map((a) => (
@@ -99,6 +112,31 @@ export default function LaserGumTherapyPage() {
               <Button variant="primary" size="lg" shadow={true} asChild>
                 <Link href="/contact">Book a Laser Gum Consultation <ChevronRight size={14} /></Link>
               </Button>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Laser Usage + Technology */}
+      <section className="py-24 bg-white">
+        <Container>
+          <div className="grid lg:grid-cols-2 gap-16">
+            <div>
+              <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Laser Usage</p>
+              <h2 className="font-heading text-[var(--color-navy)] mb-4">Therapeutic & aesthetic applications</h2>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed">
+                Lasers in dentistry are used for therapeutic purposes, treating conditions like gum disease by targeting bacteria and promoting gum tissue regeneration. They're also employed in gum reshaping (gum lifting) procedures for aesthetic enhancement, offering precise sculpting of the gum line with minimal discomfort and faster healing compared to traditional methods.
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Laser Technology</p>
+              <h2 className="font-heading text-[var(--color-navy)] mb-4">Maintain gum health</h2>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed mb-4">
+                Laser Gum Therapy is not just about treating gum disease; it's also about improving the overall aesthetics of your gums.
+              </p>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed">
+                At Bilski Dental, we believe in staying ahead of the curve by investing in new technologies that bring significant improvements to dental care. Our recent acquisition of this unique laser exemplifies our commitment to providing the most advanced and effective treatments available.
+              </p>
             </div>
           </div>
         </Container>

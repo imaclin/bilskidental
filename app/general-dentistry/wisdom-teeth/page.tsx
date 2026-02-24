@@ -42,6 +42,14 @@ export default function WisdomTeethPage() {
 
       <section className="py-24 bg-white">
         <Container>
+          <div className="max-w-3xl mb-12">
+            <p className="font-body text-[var(--color-muted)] leading-relaxed mb-3">
+              Wisdom teeth, commonly referred to as third molars, usually make their appearance between the ages of 17 and 25. While not everyone requires their wisdom teeth to be removed, extraction is often recommended in specific circumstances to prevent potential complications.
+            </p>
+            <p className="font-body text-[var(--color-muted)] leading-relaxed">
+              These complications include impaction, where the teeth do not fully erupt through the gum line, leading to pain, infection, or damage to adjacent teeth. Additionally, crowded wisdom teeth can disrupt the alignment of other teeth, necessitating orthodontic treatment.
+            </p>
+          </div>
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">When Removal Is Needed</p>
@@ -74,10 +82,10 @@ export default function WisdomTeethPage() {
               <h2 className="font-heading text-[var(--color-navy)] mb-6">Your extraction, step by step</h2>
               <div className="space-y-4">
                 {[
-                  { n: "1", t: "Evaluation", d: "Panoramic X-ray assesses the position of your wisdom teeth and any impact on surrounding structures." },
-                  { n: "2", t: "Sedation & Numbing", d: "Your chosen sedation option administered. The area is fully numbed — you will feel pressure, not pain." },
-                  { n: "3", t: "Extraction", d: "Wisdom tooth carefully loosened and removed. Dissolvable sutures placed if needed." },
-                  { n: "4", t: "Recovery", d: "Most patients return to normal activities within 2–3 days. Full aftercare instructions provided." },
+                  { n: "1", t: "Pre-Surgery Consultation", d: "Before your procedure, you'll have a detailed discussion with Dr. Bilski about what to anticipate before, during, and after your wisdom tooth extraction to ensure you're fully informed and prepared." },
+                  { n: "2", t: "Anesthesia for Comfort", d: "A local anesthetic is administered to numb the area around your wisdom teeth. For the removal of multiple wisdom teeth at once, a general anesthetic may be used, allowing you to sleep through the procedure." },
+                  { n: "3", t: "The Extraction", d: "Gum tissue is carefully opened over the affected tooth, any obstructing bone is removed, and then the wisdom tooth is extracted. Stitches may be applied post-extraction to aid in healing." },
+                  { n: "4", t: "Tailored Approach", d: "The complexity of extraction varies based on whether the tooth is fully erupted, partially erupted, or impacted. A tailored approach ensures the best possible outcome with minimal discomfort." },
                 ].map((s) => (
                   <div key={s.n} className="flex gap-4">
                     <div className="w-8 h-8 rounded-full bg-[var(--color-navy)] text-white flex items-center justify-center shrink-0 text-xs font-secondary font-600">{s.n}</div>
@@ -97,7 +105,10 @@ export default function WisdomTeethPage() {
         <Container>
           <div className="text-center max-w-xl mx-auto mb-14">
             <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Comfort First</p>
-            <h2 className="font-heading text-[var(--color-navy)]">Sedation options available</h2>
+            <h2 className="font-heading text-[var(--color-navy)] mb-4">Sedation options available</h2>
+            <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed">
+              Sedation dentistry at our clinic offers a stress-free dental experience tailored to each patient's anxiety level and comfort needs. Our diverse sedation options include oral sedation, which uses a simple pill for ease and comfort, IV conscious sedation for a deeper sedation level with rapid onset and amnesic effects, and local anesthesia for targeted numbness during specific treatments.
+            </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {sedation.map((s) => (

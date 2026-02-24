@@ -48,13 +48,26 @@ export default function CrownsPage() {
         secondaryButtonHref="/cosmetic-dentistry"
       />
 
+      {/* Definition */}
+      <section className="py-16 bg-white">
+        <Container size="md">
+          <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Dental Crowns</p>
+          <p className="font-body text-[var(--color-muted)] leading-relaxed">
+            Dental crowns, meticulously crafted as tooth-shaped "caps," are designed to fit snugly over your tooth, expertly restoring its size, shape, strength, and enhancing its appearance. By encasing the visible part of the tooth above the gum line, crowns offer a robust solution that not only improves the aesthetic appeal of your smile but also its functionality. Additionally, crowns are made from various materials such as porcelain, ceramic, or metal alloys, each tailored to match the color of your natural teeth and meet specific needs, ensuring a seamless and durable restoration.
+          </p>
+        </Container>
+      </section>
+
       {/* When + Benefits */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white pt-8">
         <Container>
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">When to Consider</p>
-              <h2 className="font-heading text-[var(--color-navy)] mb-6">Do you need a crown?</h2>
+              <h2 className="font-heading text-[var(--color-navy)] mb-3">Do you need a crown?</h2>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed mb-6">
+                Dental crowns are a versatile option for addressing a wide array of dental issues. Consider a dental crown if you experience:
+              </p>
               <div className="space-y-3">
                 {indications.map((item) => (
                   <div key={item} className="flex items-start gap-3">
@@ -68,7 +81,10 @@ export default function CrownsPage() {
             </div>
             <div>
               <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Benefits</p>
-              <h2 className="font-heading text-[var(--color-navy)] mb-6">Why choose a crown?</h2>
+              <h2 className="font-heading text-[var(--color-navy)] mb-3">Why choose a crown?</h2>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed mb-6">
+                Dental crowns offer numerous advantages, including:
+              </p>
               <div className="space-y-5">
                 {benefits.map((b) => (
                   <div key={b.title} className="bg-[var(--color-beige-light)] rounded-2xl p-4 border border-[var(--color-beige)]">
@@ -87,7 +103,10 @@ export default function CrownsPage() {
         <Container>
           <div className="text-center max-w-xl mx-auto mb-14">
             <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">The Process</p>
-            <h2 className="font-heading text-[var(--color-navy)]">Your crown procedure, step by step</h2>
+            <h2 className="font-heading text-[var(--color-navy)] mb-4">Your crown procedure, step by step</h2>
+            <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed">
+              Undergo a transformative dental crown procedure designed to restore your smile's integrity and aesthetics efficiently. Our approach ensures a comfortable and effective treatment through a step-by-step process.
+            </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {steps.map((s) => (

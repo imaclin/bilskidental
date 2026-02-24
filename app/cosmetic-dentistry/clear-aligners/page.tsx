@@ -34,8 +34,20 @@ export default function ClearAlignersPage() {
         primaryButtonHref="/contact"
       />
 
+      {/* Why Clear Aligners */}
+      <section className="py-16 bg-white">
+        <Container size="md">
+          <p className="font-body text-[var(--color-muted)] leading-relaxed mb-4">
+            Recognizing that each journey to the perfect smile is unique, it's important to address how crooked or crowded teeth can undermine your confidence and complicate dental hygiene, potentially leading to tooth decay and gum disease.
+          </p>
+          <p className="font-body text-[var(--color-muted)] leading-relaxed">
+            If traditional metal braces seem unappealing, consider clear aligners. These nearly invisible, custom-made plastic shells fit snugly over your teeth, exerting gentle pressure to comfortably reposition them. Designed for mild to moderate orthodontic needs, clear aligners could be the seamless solution you need to achieve your dream smile. Results may vary.
+          </p>
+        </Container>
+      </section>
+
       {/* Conditions + How it works */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white pt-8">
         <Container>
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
@@ -65,7 +77,13 @@ export default function ClearAlignersPage() {
 
             <div>
               <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">How It Works</p>
-              <h2 className="font-heading text-[var(--color-navy)] mb-6">Simple, effective, discreet</h2>
+              <h2 className="font-heading text-[var(--color-navy)] mb-4">Simple, effective, discreet</h2>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed mb-3">
+                Clear aligners are transparent, thin trays made from a plastic-like material, tailored specifically to fit your mouth. They work by applying the necessary pressure to gradually shift your teeth. Each aligner is typically worn for two weeks at a time, for at least 22 hours a day, slightly guiding your teeth with each use.
+              </p>
+              <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed mb-6">
+                The total number of aligners and the duration of treatment required depend upon your specific orthodontic needs and the extent of adjustment your teeth require.
+              </p>
               <div className="space-y-5">
                 {[
                   { n: "1", t: "Custom Fitting", d: "Digital scans create a precise 3D model of your teeth. AI maps the exact movement path to your ideal smile." },
@@ -91,7 +109,10 @@ export default function ClearAlignersPage() {
         <Container>
           <div className="text-center max-w-xl mx-auto mb-14">
             <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">2 Brands Offered</p>
-            <h2 className="font-heading text-[var(--color-navy)]">Industry-leading clear aligner systems</h2>
+            <h2 className="font-heading text-[var(--color-navy)] mb-4">Industry-leading clear aligner systems</h2>
+            <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed">
+              Each of these options is engineered to ensure your comfort and convenience, allowing you to achieve the confident, radiant smile you desire with minimal intrusion.
+            </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <div className="bg-white rounded-2xl p-8 border border-[var(--color-beige)]">

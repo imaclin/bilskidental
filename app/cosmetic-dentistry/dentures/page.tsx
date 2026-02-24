@@ -28,8 +28,11 @@ export default function DenturesPage() {
       <section className="py-24 bg-white">
         <Container>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Types Available</p>
-            <h2 className="font-heading text-[var(--color-navy)]">Full & partial dentures tailored to you</h2>
+            <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Choosing The Right Dentures For You</p>
+            <h2 className="font-heading text-[var(--color-navy)] mb-4">Full & partial dentures tailored to you</h2>
+            <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed">
+              We offer both traditional and digital dentures to meet a variety of patient needs. At the heart of our practice lies a deep commitment to not just restoring the beauty and functionality of your smile, but to revitalizing your sense of self-confidence and well-being.
+            </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-8">
             {/* Full Dentures */}
@@ -76,6 +79,16 @@ export default function DenturesPage() {
               </div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Custom Dental Solutions */}
+      <section className="py-16 bg-[var(--color-beige-light)]">
+        <Container size="md">
+          <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Custom Dental Solutions</p>
+          <p className="font-body text-[var(--color-muted)] leading-relaxed">
+            Dentures today are more natural-looking and comfortable than ever, allowing you to eat, speak, and smile with confidence. With options for both full and partial replacements, Bilski Dental's custom denture services aim to restore the full function and appearance of your smile. If you believe dentures are the right choice for you, or if you're looking to explore other dental restorations like implants, reach out to our Bilski Dental team today.
+          </p>
         </Container>
       </section>
 

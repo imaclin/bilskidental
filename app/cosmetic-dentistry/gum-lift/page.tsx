@@ -39,8 +39,18 @@ export default function GumLiftPage() {
         secondaryButtonHref="/cosmetic-dentistry"
       />
 
+      {/* Definition */}
+      <section className="py-16 bg-white">
+        <Container size="md">
+          <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Gum Lifts</p>
+          <p className="font-body text-[var(--color-muted)] leading-relaxed">
+            A gum lift, also referred to as gingivectomy or gum contouring, is a precise cosmetic dental procedure designed to sculpt the gum tissue around your teeth. This treatment effectively addresses uneven gum lines, minimizes excessive gum visibility when smiling, and exposes more of your teeth, enhancing the overall proportion and aesthetic appeal of your smile. Additionally, a gum lift can improve the overall health of your gums by removing overhanging areas where bacteria can accumulate, reducing the risk of periodontal issues.
+          </p>
+        </Container>
+      </section>
+
       {/* Benefits */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white pt-8">
         <Container>
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
@@ -97,7 +107,10 @@ export default function GumLiftPage() {
         <Container>
           <div className="text-center max-w-xl mx-auto mb-14">
             <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-navy)] mb-3">Comfort First</p>
-            <h2 className="font-heading text-[var(--color-navy)]">Sedation options available</h2>
+            <h2 className="font-heading text-[var(--color-navy)] mb-4">Sedation options available</h2>
+            <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed">
+              Our experienced team uses state-of-the-art techniques to ensure effective results with maximum comfort. Sedation dentistry at our clinic offers a stress-free dental experience tailored to each patient's anxiety level and comfort needs.
+            </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {sedationOptions.map((s) => (

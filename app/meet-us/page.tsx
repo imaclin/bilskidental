@@ -90,8 +90,13 @@ export default function MeetUsPage() {
                 <p className="font-heading text-xl text-[var(--color-navy)] italic leading-snug">
                   "Dentistry is a blend of medicine and artistry, coming together
                   to enhance and develop self-esteem for those whose smiles leave
-                  them feeling extremely self-conscious."
+                  them feeling extremely self-conscious. I am passionate about
+                  overall personal oral and systemic health. That means having
+                  healthy gums and teeth free of inflammation and decay. Combine
+                  that with a stable bite, now my patients have the foundation
+                  for sound healthy jaws that keep them headache- and TMJ-free."
                 </p>
+                <p className="font-secondary text-xs text-[var(--color-muted)] mt-3">— Dr. Thomas Bilski</p>
               </blockquote>
 
               <p className="font-body text-sm text-[var(--color-muted)] leading-relaxed mb-6">
@@ -186,22 +191,29 @@ export default function MeetUsPage() {
       {/* Bilingual section */}
       <section className="py-16 bg-[var(--color-navy)]">
         <Container>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
-            <div>
+          <div className="flex flex-col md:flex-row items-start justify-between gap-10">
+            <div className="flex-1">
               <p className="text-xs font-secondary font-600 uppercase tracking-[0.15em] text-[var(--color-beige)] mb-2">
                 Bilingual Practice
               </p>
-              <h3 className="font-heading text-white text-3xl mb-2">
-                Hablamos español
+              <h3 className="font-heading text-white text-3xl mb-4">
+                Bienvenidos a Nuestra Clínica Dental
               </h3>
-              <p className="font-body text-white/60 text-sm">
-                Estamos encantados de atenderlos. Our bilingual team ensures
-                every patient feels understood and comfortable.
+              <p className="font-body text-white/70 text-sm leading-relaxed mb-3">
+                En nuestra clínica dental, entendemos la importancia de sentirse cómodo y comprendido durante su visita. Es por eso que nos enorgullece informarles que contamos con un equipo de profesionales. Hablamos español y estámos encantados de atenderlos.
+              </p>
+              <p className="font-body text-white/70 text-sm leading-relaxed mb-3">
+                En la búsqueda constante de proporcionar un servicio dental de calidad, nos esforzamos por crear un ambiente acogedor y amigable para todos nuestros pacientes. Sabemos que la comunicación efectiva desempeña un papel crucial en su experiencia dental.
+              </p>
+              <p className="font-body text-white/70 text-sm leading-relaxed">
+                Entendemos que hablar su idioma nativo puede marcar la diferencia en su nivel de comodidad y confianza durante su visita al dentista.
               </p>
             </div>
-            <Button variant="beige" size="lg" shadow={true} asChild>
-              <Link href="/contact">Book an Appointment</Link>
-            </Button>
+            <div className="shrink-0 md:pt-8">
+              <Button variant="beige" size="lg" shadow={true} asChild>
+                <Link href="/contact">Book an Appointment</Link>
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
