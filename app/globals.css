@@ -1,26 +1,156 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ─── Design Tokens ─────────────────────────────────────────────── */
+/* SINGLE SOURCE OF TRUTH: Change colors here to update the entire site */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* ── Brand Colors ── */
+  --color-navy: #1a2f6a;
+  --color-navy-dark: #152458;
+  --color-navy-light: #243a7c;
+  --color-blue-accent: #a4def2;
+  --color-beige: #e4dcd5;
+  --color-beige-light: #f0ebe7;
+  --color-beige-dark: #d4ccc5;
+  --color-white: #ffffff;
+  --color-border: #cccccc;
+  --color-muted: #6b7280;
+
+  /* ── Semantic Aliases ── */
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-navy);
+  --color-primary: var(--color-navy);
+  --color-primary-hover: var(--color-blue-accent);
+  --color-accent: var(--color-beige);
+  --color-accent-light: var(--color-beige-light);
+
+  /* ── Typography ── */
+  --font-heading: var(--font-eb-garamond), Georgia, serif;
+  --font-body: var(--font-manrope), system-ui, sans-serif;
+  --font-secondary: var(--font-montserrat), system-ui, sans-serif;
+
+  /* ── Font Sizes ── */
+  --text-h1: 4rem;
+  --text-h2: 3rem;
+  --text-body: 0.875rem;
+
+  /* ── Spacing ── */
+  --spacing-unit: 0.25rem;
+
+  /* ── Border Radius ── */
+  --radius-sm: 0.25rem;
+  --radius-md: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 1.5rem;
+
+  /* ── Shadows ── */
+  --shadow-cta:
+    rgba(0, 0, 0, 0.07) 0px 36px 67px 0px,
+    rgba(0, 0, 0, 0.05) 0px 13.141px 24.456px 0px,
+    rgba(0, 0, 0, 0.04) 0px 6.38px 11.873px 0px,
+    rgba(0, 0, 0, 0.03) 0px 3.127px 5.82px 0px,
+    rgba(0, 0, 0, 0.02) 0px 1.237px 2.301px 0px;
+  --shadow-card:
+    rgba(0, 0, 0, 0.04) 0px 4px 24px 0px,
+    rgba(0, 0, 0, 0.03) 0px 1px 6px 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base Styles ───────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.6;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--color-navy);
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, var(--text-h1)); }
+h2 { font-size: clamp(2rem, 4vw, var(--text-h2)); }
+h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+
+/* Links inherit color by default — NO global color override.
+   This prevents the conflict where navy overrides white text in dark sections. */
+a { text-decoration: none; color: inherit; }
+
+/* ─── Button Link Override ─────────────────────────────────────── */
+/* Primary buttons should always have white text, even when rendered as links */
+.bg-\[var\(--color-navy\)\] a,
+.bg-\[var\(--color-navy\)\] { color: #ffffff !important; }
+
+/* ─── Navy Background Text Override ───────────────────────────────── */
+/* Ensure all text in navy backgrounds is white */
+.bg-\[var\(--color-navy\)\] h1,
+.bg-\[var\(--color-navy\)\] h2,
+.bg-\[var\(--color-navy\)\] h3,
+.bg-\[var\(--color-navy\)\] h4,
+.bg-\[var\(--color-navy\)\] h5,
+.bg-\[var\(--color-navy\)\] h6 { color: #ffffff !important; }
+
+/* ─── Beige Background Text Override ───────────────────────────────── */
+/* Ensure all text in beige backgrounds is navy blue */
+.bg-\[var\(--color-beige\)\],
+.bg-\[var\(--color-beige-light\)\] { color: var(--color-navy) !important; }
+
+/* ─── Beige Button Override ─────────────────────────────────────────── */
+/* Ensure buttons with beige backgrounds have navy text */
+.bg-\[var\(--color-beige\)\] button,
+.bg-\[var\(--color-beige\)\] a,
+.bg-\[var\(--color-beige-light\)\] button,
+.bg-\[var\(--color-beige-light\)\] a { color: var(--color-navy) !important; }
+
+/* ─── Utility Classes ───────────────────────────────────────────── */
+.font-heading   { font-family: var(--font-heading); }
+.font-body      { font-family: var(--font-body); }
+.font-secondary { font-family: var(--font-secondary); }
+
+.text-navy      { color: var(--color-navy); }
+.text-beige     { color: var(--color-beige); }
+.text-muted     { color: var(--color-muted); }
+.bg-navy        { background-color: var(--color-navy); }
+.bg-beige       { background-color: var(--color-beige); }
+.bg-beige-light { background-color: var(--color-beige-light); }
+
+.shadow-cta     { box-shadow: var(--shadow-cta); }
+.shadow-card    { box-shadow: var(--shadow-card); }
+
+/* ─── Focus Ring ────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-navy);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ─── Skip Navigation (Accessibility) ──────────────────────────── */
+.skip-nav {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-navy);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  transition: top 0.2s;
+}
+.skip-nav:focus { top: 1rem; }
+
+/* ─── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-beige-light); }
+::-webkit-scrollbar-thumb { background: var(--color-navy); border-radius: 3px; }
