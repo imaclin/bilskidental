@@ -91,14 +91,15 @@ export default function NewPatientsPage() {
                 patient paperwork online through our secure patient portal.
                 Takes about 10 minutes.
               </p>
-              <a
-                href="https://app.modento.io/bilskidental/sign-up"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-[var(--color-navy)] text-white text-sm font-secondary font-600 hover:bg-[var(--color-navy-dark)] transition-colors mb-4"
-              >
-                Complete Forms Online <ExternalLink size={13} />
-              </a>
+              <Button variant="primary" size="md" className="mb-4" asChild>
+                <a
+                  href="https://app.modento.io/bilskidental/sign-up"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Complete Forms Online <ExternalLink size={13} />
+                </a>
+              </Button>
               <p className="font-body text-xs text-[var(--color-muted)]">
                 Can't complete online? Arrive 15 minutes early and our team will assist you.
               </p>

@@ -55,8 +55,9 @@ export function HomeHero() {
             </div>
 
             <h1 className="font-heading text-[var(--color-navy)] mb-6 leading-[1.1]">
-              Home of the{" "}
-              <span className="italic text-[var(--color-navy)]">Bilski Smile.</span>
+              Home of the famous
+              <br />
+              <span className="italic text-[var(--color-navy)]" style={{ textDecoration: "underline", textUnderlineOffset: "4px", textDecorationColor: "var(--color-blue-accent)", textDecorationThickness: "2px" }}>Bilski Smile</span>
             </h1>
 
             <p className="font-body text-base text-[var(--color-muted)] leading-relaxed mb-8 max-w-lg">

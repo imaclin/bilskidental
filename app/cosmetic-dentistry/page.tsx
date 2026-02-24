@@ -109,7 +109,7 @@ export default function CosmeticDentistryPage() {
             <Button variant="beige" size="md" shadow={true} asChild>
               <Link href="/contact">Schedule a Consultation <ChevronRight size={14} /></Link>
             </Button>
-            <Button variant="ghost" size="md" className="text-white hover:bg-white/10" asChild>
+            <Button variant="ctaSecondary" size="md" asChild>
               <Link href="/patient-center">New Patient Info</Link>
             </Button>
           </div>

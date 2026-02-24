@@ -24,14 +24,12 @@ export function HomeCTA() {
                 Book Appointment <ChevronRight size={16} />
               </Link>
             </Button>
-            <a
-              href={`tel:${SITE.phonePlain}`}
-              className="inline-flex items-center justify-center gap-2 h-13 px-8 text-base font-secondary font-600 bg-transparent text-white border border-white rounded-[16px] hover:bg-[var(--color-blue-accent)] hover:text-[var(--color-navy)] transition-all duration-200"
-              style={{ color: '#ffffff', borderColor: '#ffffff' }}
-            >
-              <Phone size={16} />
-              {SITE.phone}
-            </a>
+            <Button variant="ctaSecondary" size="lg" asChild>
+              <a href={`tel:${SITE.phonePlain}`}>
+                <Phone size={16} />
+                {SITE.phone}
+              </a>
+            </Button>
           </div>
         </div>
       </Container>

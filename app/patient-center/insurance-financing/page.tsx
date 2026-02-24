@@ -84,12 +84,11 @@ export default function InsuranceFinancingPage() {
                 benefits and give you a clear picture of what's covered —
                 before any work begins.
               </p>
-              <a
-                href="tel:+12165244410"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-[var(--color-navy)] text-white text-sm font-secondary font-600 hover:bg-[var(--color-navy-dark)] transition-colors"
-              >
-                <Phone size={14} /> (216) 524-4410
-              </a>
+              <Button variant="primary" size="md" asChild>
+                <a href="tel:+12165244410">
+                  <Phone size={14} /> (216) 524-4410
+                </a>
+              </Button>
             </div>
           </div>
         </Container>

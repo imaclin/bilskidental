@@ -103,14 +103,7 @@ a { text-decoration: none; color: inherit; }
 /* ─── Beige Background Text Override ───────────────────────────────── */
 /* Ensure all text in beige backgrounds is navy blue */
 .bg-\[var\(--color-beige\)\],
-.bg-\[var\(--color-beige-light\)\] { color: var(--color-navy) !important; }
-
-/* ─── Beige Button Override ─────────────────────────────────────────── */
-/* Ensure buttons with beige backgrounds have navy text */
-.bg-\[var\(--color-beige\)\] button,
-.bg-\[var\(--color-beige\)\] a,
-.bg-\[var\(--color-beige-light\)\] button,
-.bg-\[var\(--color-beige-light\)\] a { color: var(--color-navy) !important; }
+.bg-\[var\(--color-beige-light\)\] { color: var(--color-navy); }
 
 /* ─── Utility Classes ───────────────────────────────────────────── */
 .font-heading   { font-family: var(--font-heading); }

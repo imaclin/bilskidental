@@ -11,7 +11,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-[var(--color-navy)] text-white rounded-[32px] hover:bg-[var(--color-blue-accent)] hover:text-[var(--color-navy)] active:scale-[0.98]",
+          "bg-[var(--color-navy)] !text-white rounded-[32px] hover:bg-[var(--color-blue-accent)] hover:!text-[var(--color-navy)] active:scale-[0.98]",
         secondary:
           "bg-transparent text-[var(--color-navy)] border border-[var(--color-navy)] rounded-[16px] hover:bg-[var(--color-blue-accent)] hover:text-[var(--color-navy)] hover:border-[var(--color-blue-accent)] active:scale-[0.98]",
         ghost:
@@ -20,6 +20,8 @@ const buttonVariants = cva(
           "bg-white text-[var(--color-navy)] border border-[var(--color-border)] rounded-[16px] hover:border-[var(--color-navy)]",
         beige:
           "bg-[var(--color-beige)] !text-[var(--color-navy)] rounded-[32px] hover:bg-[var(--color-beige-dark)] active:scale-[0.98]",
+        ctaSecondary:
+          "bg-transparent !text-white border border-white rounded-[16px] hover:bg-[var(--color-blue-accent)] hover:!text-[var(--color-navy)] hover:border-[var(--color-blue-accent)] active:scale-[0.98]",
       },
       size: {
         sm: "h-9 px-4 text-sm",
