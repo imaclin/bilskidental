@@ -79,6 +79,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bilskidental.com",
   },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 const schemaOrg = {
